@@ -1,0 +1,5 @@
+host = 'host name'
+dbname = 'Database Name'
+user = 'username'
+password = 'password'
+sslmode = 'require'
