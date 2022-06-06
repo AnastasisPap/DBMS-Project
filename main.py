@@ -1,5 +1,6 @@
 from establish_connection import connect
 from movie_stats import *
+from actor_stats import *
 
 def main():
     cursor = connect()
