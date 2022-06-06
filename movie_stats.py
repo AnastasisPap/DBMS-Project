@@ -15,7 +15,7 @@ def movies_per_year(cursor):
     print()
     print(f'Total rows: {len(rows)}')
     
-def movies_per_gender(cursor):
+def movies_per_genre(cursor):
     cursor.execute("""
         select genre.name, x.count
         from genre
@@ -34,7 +34,7 @@ def movies_per_gender(cursor):
     print()
     print(f'Total rows: {len(rows)}')
     
-def movies_per_gender_and_year(cursor):
+def movies_per_genre_and_year(cursor):
     cursor.execute("""
         select genre.name, x.date_part, x.count
         from genre
